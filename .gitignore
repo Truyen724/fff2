@@ -26,4 +26,4 @@ yarn-error.log
 /face_recognition/python/output
 /output
 face_recognition/python/get_address.exe
-
+/face_recognition/python/__pycache__
