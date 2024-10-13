@@ -398,8 +398,10 @@ class UIAddUser(tk.Toplevel):
             full_name = self.name_user
 
         full_idname = user_id+"_"+full_name+".jpg"
-        file_name = r"{}/{}".format(FOLDER_PATH, full_idname)
+        file_name = r"{}\{}".format(FOLDER_PATH, full_idname)
         cv2.imwrite(file_name, self.cv_image)
+        print(FOLDER_PATH)
+        print(file_name)
         FaceRecognition.frame_processor.faces_database.add_face_to_database(file_name)
         print(file_name)
         print("ID:", user_id)
